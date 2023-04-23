@@ -1,0 +1,14 @@
+for i, Module in next, getgc(true) do
+    if type(Module) == "table" and rawget(Module, "maxammo") then
+        Module.Damage = 9999999999
+        Module.scatter = 1000
+        Module.BulletSpeed = 10000
+        Module.GunRecoil = 0
+        Module.HeadMultiplier = 999
+        Module.LegMultiplier = 999
+        Module.TorsoMultiplier = 999
+        Module.ReloadSpeed = 0.000001
+        Module.waittime = 0
+        Module.Weight = 0
+    end
+end
